@@ -7,20 +7,22 @@
   <body>
 	<header class="header-main">
 		<div class="header-main-top">
-			<div class="site-logo">
-				<a class="btn site-logo__btn" href="#">Техномарт</a>
+			<div class="container">
+				<div class="site-logo">
+					<a class="btn site-logo__btn" href="#">Техномарт</a>
+				</div>
+				
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+					<input class="input search-form__input" type="text" name="search-text" value="" 
+						placeholder="Поиск:">
+				</form>
+				
+				<ul class="user-tools">
+					<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
+					<li><a class="user-tools__item" href="#">Корзина: 0</a></li>
+					<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
+				</ul>
 			</div>
-			
-			<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-				<input class="input search-form__input" type="text" name="search-text" value="" 
-					placeholder="Поиск:">
-			</form>
-			
-			<ul class="user-tools">
-				<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
-				<li><a class="user-tools__item" href="#">Корзина: 0</a></li>
-				<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
-			</ul>
 		</div>
 		
 		<div class="header-main-middle">
@@ -161,7 +163,10 @@
 		</section>
 		
 		<section class="popular-manufacturers">
-			<h2 class="popular-manufacturers__title">Популярные производители:</h2>
+			<div class="popular-products-wrap">
+				<h2 class="popular-manufacturers__title">Популярные производители:</h2>
+				<a class="btn popular-popular-manufacturers__btn" href="#">Все популярные товары</a>
+			</div>
 			<ul class="manufacturers">
 				<li>
 					<a class="manufacturer" href="#">
