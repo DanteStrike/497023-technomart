@@ -1,0 +1,150 @@
+/*    Both    */
+
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+}
+
+.visually-hidden {
+  display:none;
+}
+
+.product__title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+}
+
+
+/*    index.html    */
+
+/*!--- temporary css-rules */
+.promo-item, 
+.promo-slide {
+  background-color: #ffbf47;
+}
+
+/* temporary css-rules ---!*/
+
+.promo-item__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+}
+
+.promo-slide__title {
+  font-size: 36px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.popular-products__title,
+.popular-manufacturers__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.services__title {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.service-slide__title {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+
+.company-technomart__title {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.main-contacts__title {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+
+
+
+/*    catalog.html    */
+
+.main-container__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.filters-title {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+}
+
+.sorting-title {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;  
+}
+
+.about-perforators-title {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", serif;
+  text-transform: uppercase;  
+}
