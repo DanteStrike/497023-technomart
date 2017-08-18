@@ -14,7 +14,8 @@
 				</div>
 				
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<input class="input search-form__input" type="text" name="search-text" value="" 
+					<label class="visually-hidden" for="search">Поиск:</label>
+					<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
 						placeholder="Поиск:">
 				</form>
 				
@@ -84,8 +85,8 @@
 						<div class="promo-slider-controls">
 							<input class="visually-hidden" type="radio" name="promo-slider" id="promo-point1" checked>
 							<input class="visually-hidden" type="radio" name="promo-slider" id="promo-point2">
-							<label for="promo-point1"></label>
-							<label for="promo-point2"></label>
+							<label for="promo-point1">Первый слайд</label>
+							<label for="promo-point2">Второй слайд</label>
 						</div>
 						<div class="promo-slides">
 							<div class="promo-slide promo-slide--pp1">
@@ -101,8 +102,8 @@
 							</div>
 							
 							<a class="btn promo-slides__btn" href="catalog.html">Открыть каталог</a>
-							<span class="slider-btn slider-btn--prev"></span>
-							<span class="slider-btn slider-btn--next"></span>
+							<button class="slider-btn slider-btn--prev">Назад</button>
+							<button class="slider-btn slider-btn--next">Далее</button>
 						</div>
 					</div>	
 					
@@ -299,10 +300,11 @@
 					<p class="main-contacts__description">Вы можете забрать товар сами, заехав в наш офис:</p>
 					<div class="main-contacts__map">
 						<a href="#">
-							<img src="img/map.jpg" width="295" height="150" alt="Контакты">
+							<img src="img/map.jpg" width="295" height="150" alt="г. Санкт-Петербург, 
+                            ул. Б. Конюшенная, д. 19/8">
 						</a>
 					</div>
-					<a class="btn main-contacts__btn" href="#">Заблудились? Напишите нам!</a>
+					<button class="btn main-contacts__btn" href="#">Заблудились? Напишите нам!</button>
 				</section>
 			</div>
 		</div>
@@ -355,12 +357,12 @@
 	<!--Modals-->
 	<section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <span class="modal-map__close">x</span>
+      <button class="modal-map__close">Закрыть</button>
     </section>
 	
 	<div class="hover-product">
-		<span class="hover-product__buy">Купить</span>
-		<span class="hover-product__bookmark">В закладки</span>
+		<button class="hover-product__buy">Купить</button>
+		<button class="hover-product__bookmark">В закладки</button>
 	</div>
 	
   </body>
