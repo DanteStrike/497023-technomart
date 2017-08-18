@@ -14,7 +14,8 @@
 				</div>
 				
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<input class="input search-form__input" type="text" name="search-text" value="" 
+					<label class="visually-hidden" for="search">Поиск:</label>
+					<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
 						placeholder="Поиск:">
 				</form>
 				
@@ -37,7 +38,7 @@
 				
 				<div class="user-login">
 					<span class="user-login__btn--profil">Равшан Джамшутович</span>
-					<a class="btn user-login__btn user-login__btn--logof" href="#">x</a>
+					<button class="btn user-login__btn user-login__btn--logof" href="#">Выход</button>
 					<a class="btn user-login__btn user-login__btn--orders" href="#">Мои заказы</a>
 					<a class="btn user-login__btn user-login__btn--acc" href="#">Личный кабинет</a>
 				</div>
@@ -82,9 +83,11 @@
 							<div class="range-controls__toggle range-controls__toggle--max">MAX</div>
 						</div>
 						<div class="price-controls">
-							<input class="price-controls__min" name="min" type="text" value="0">
-							<div class="price-controls__separator">-</div>
-							<input class="price-controls__max" name="max" type="text" value="3000">
+							<label class="visually-hidden" for="min">Минимум</label>                    
+							<input class="price-controls__min" id="min" name="min" type="text" value="0">
+							<div class="price-controls__separator">Разделитель</div>
+							<label class="visually-hidden" for="mах">Максимум</label>  
+							<input class="price-controls__max" id="max" name="max" type="text" value="3000">
 						</div>	
 					</fieldset>
 					
@@ -156,8 +159,8 @@
 					<li class="sorting-list__item sorting-list__item--active">По цене</li>
 					<li class="sorting-list__item">По типу</li>
 					<li class="sorting-list__item">По функционалу</li>
-					<li class="visually-hidden sorting-list__item sorting-list__item--up">/\</li>
-					<li class="visually-hidden sorting-list__item sorting-list__item--down">\/</li>
+					<li class="visually-hidden sorting-list__item sorting-list__item--up">По возрастанию</li>
+					<li class="visually-hidden sorting-list__item sorting-list__item--down">По убыванию</li>
 				</ul>
 			</section>
 			
@@ -322,15 +325,15 @@
 	
 	<!--Modals-->
 	<section class="modal modal-add">
-      <h2 class="modal-add__title">Товар добавлен в корзину!</h2>
+	  <h2 class="modal-add__title">Товар добавлен в корзину!</h2>
 	  <a class="btn modal-add__btn modal-add__btn--order" href="#">Оформить заказ</a>
-	  <span class="btn modal-add__btn modal-add__btn--continue">Продолжить покупки</span>
-      <span class="modal-add__close">x</span>
+	  <button class="btn modal-add__btn modal-add__btn--continue">Продолжить покупки</button>
+     <button class="modal-add__close">Закрыть</button>
     </section>
 	
 	<div class="hover-product">
-		<span class="hover-product__buy">Купить</span>
-		<span class="hover-product__bookmark">В закладки</span>
+		<button class="hover-product__buy">Купить</button>
+		<button class="hover-product__bookmark">В закладки</button>
 	</div>
 	
   </body>
