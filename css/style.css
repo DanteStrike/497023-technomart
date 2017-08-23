@@ -638,6 +638,8 @@ a {
 	font-size: 14px;
 	color: #000000;	
 	text-transform: uppercase;	
+	
+	background-color: #ffffff;
 }
 
 .hover-product .hover-product__bookmark:hover {
