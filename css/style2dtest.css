@@ -1,0 +1,145 @@
+/*    Both    */
+
+html, body {
+	box-sizing: border-box;
+	
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Cuprum", "Times New Roman", sans-serif;
+	line-height: 30px;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-transform: none;
+	
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*		index.html		*/
+.red-btn {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-family: "Cuprum", "Times New Roman", sans-serif;
+	line-height: 18px;
+	font-size: 14px;	
+	color: #ffffff;
+	text-transform: uppercase;	
+
+	background-color: #ee3643;
+}
+
+.promo-slider-wrap {
+	position: relative;
+	height: 266px;
+	width: 620px;
+	background-color: #000000;
+}
+
+.promo-slider-controls {
+	margin: 0;
+	padding: 0;
+	
+	position: absolute;
+	left: 50%;
+	bottom: 33px;
+	
+	width: 140px;
+	height: 20px;
+	
+	margin-left: -70px;
+	
+	text-align: center;
+	
+	z-index: 10;
+}
+
+.promo-slider-controls .controls {
+	display: inline-block;
+	cursor: pointer;
+	
+	margin: 0;
+	padding: 0;
+	
+	width: 6px;
+	height: 6px;
+	
+	margin-right: 3px;
+	
+	font-size: 0px;
+	
+	border: 2px solid white;
+	border-radius: 50% 50%;
+	
+	background-color: white;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+
+.promo-slide {
+	position: absolute;
+	color: #ffffff;
+}
+
+.promo-slide .promo-slide__title {
+	position: absolute;
+	top: 22px;
+	left: 24px;
+	
+	margin: 0;
+	padding: 0;
+	
+	line-height: 43px;
+	font-size: 36px;	
+	text-transform: uppercase;	
+}
+.promo-slide .promo-slide__description {
+	position: absolute;
+	top: 63px;
+	left: 24px;
+	
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans", "Times New Roman", sans-serif;
+	line-height: 22px;
+	font-size: 18px;	
+}
+
+.promo-slides {
+	
+}
+
+#promo-point1:checked ~ .promo-slider-controls .controls-1,
+#promo-point2:checked ~ .promo-slider-controls .controls-2 {
+	background-color: black;	
+}
+
+#promo-point1:checked ~ .promo-slides .promo-slide--pp1,
+#promo-point2:checked ~ .promo-slides .promo-slide--pp2 {
+	z-index: 5;	
+}
+

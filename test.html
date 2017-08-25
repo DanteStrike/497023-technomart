@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style2dtest.css" rel="stylesheet">
+  </head>
+  <body>
+  
+	<div class="promo-slider-wrap">
+		<input class="visually-hidden" type="radio" name="promo-slider" id="promo-point1" checked>
+		<input class="visually-hidden" type="radio" name="promo-slider" id="promo-point2">
+		<div class="promo-slides">
+			<div class="promo-slide promo-slide--pp1">
+				<h3 class="promo-slide__title">Перфораторы</h3>
+				<p class="promo-slide__description">Настоящие мужские игрушки</p>
+				<img src="img/promo-slide1.jpg" width="620" height="266" alt="Перфораторы">
+			</div>
+			
+			<div class="promo-slide promo-slide--pp2">
+				<h3 class="promo-slide__title">Дрели</h3>
+				<p class="promo-slide__description">Соседям на радость!</p>
+				<img src="img/promo-slide2.jpg" width="620" height="266" alt="Дрели">
+			</div>
+		</div>
+		<div class="promo-slider-controls">
+			<label class="controls controls-1" for="promo-point1">Первый слайд</label>
+			<label class="controls controls-2" for="promo-point2">Второй слайд</label>
+		</div>
+		<a class="red-btn promo-slides__red-btn" href="catalog.html">Открыть каталог</a>
+		<button class="slider-btn slider-btn--prev">Назад</button>
+		<button class="slider-btn slider-btn--next">Далее</button>
+	</div>	  
+  </body>
+</html>
