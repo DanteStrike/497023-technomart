@@ -11,26 +11,27 @@
 	<header class="header-main">
 		<div class="header-main-top">
 			<div class="container">
-				<div class="site-logo">
-					<a class="site-logo__btn" href="#">Техномарт</a>
+				<div class="header-main-top-wrap">
+					<div class="site-logo">
+						<a class="site-logo__btn" href="#">Техномарт</a>
+					</div>
+					
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label class="visually-hidden" for="search">Поиск:</label>
+						<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
+							placeholder="Поиск:">
+					</form>
+					
+					<ul class="user-tools">
+						<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
+						<li><a class="user-tools__item" href="#">Корзина: 0</a></li>
+						<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
+					</ul>
 				</div>
-				
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<label class="visually-hidden" for="search">Поиск:</label>
-					<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
-						placeholder="Поиск:">
-				</form>
-				
-				<ul class="user-tools">
-					<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
-					<li><a class="user-tools__item" href="#">Корзина: 0</a></li>
-					<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
-				</ul>
 			</div>
 		</div>
-		
-		<div class="header-main-middle">
-			<div class="container">
+		<div class="container">
+			<div class="header-main-middle">
 				<p class="site-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				
 				<p class="header-main-contacts">
@@ -43,10 +44,8 @@
 					<a class="user-login__btn user-login__btn--reg" href="#">Регистрация</a>
 				</div>
 			</div>
-		</div>
 	
-		<nav class="navigation-main">
-			<div class="container">
+			<nav class="navigation-main">
 				<ul	class="main-menu-list">
 					<li><a class="main-menu-list__item" href="#">Главная</a></li>
 					<li><a class="main-menu-list__item" href="#">Компания</a></li>
@@ -56,8 +55,8 @@
 					<li><a class="main-menu-list__item" href="#">Доставка</a></li>
 					<li><a class="main-menu-list__item" href="#">Контакты</a></li>
 				</ul>
-			</div>
-		</nav>	
+			</nav>	
+		</div>
 	</header>
 	
 	<main class="main-container">
@@ -84,7 +83,7 @@
 				
 				<div class="promo-wrap-bottom">
 					<div class="promo-slider-wrap">
-						<ul class="promo-slider-controls">
+					<!--	<ul class="promo-slider-controls">
 							<li>
 								<input class="visually-hidden" type="radio" name="promo-slider" id="promo-point1" checked>
 								<label for="promo-point1">Первый слайд</label>
@@ -111,6 +110,7 @@
 							<button class="slider-btn slider-btn--prev">Назад</button>
 							<button class="slider-btn slider-btn--next">Далее</button>
 						</div>
+						!-->
 					</div>	
 					
 					<div class="promo-wrap-bottom__right">
@@ -238,7 +238,7 @@
 				<p class="services__description">Хороший интернет-магазин отличается от плохого не только ценами! 
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<div class="service-slider-wrap">
-					<ul class="service-slider-controls">
+					<!--<ul class="service-slider-controls">
 						<li class="service-slider-control">
 							<input class="visually-hidden service-point-1" type="radio" name="service-slider" id="service-point1" checked>
 							<label class="service-slider__btn service-slider__btn--1" for="service-point1">Доставка</label>
@@ -279,7 +279,7 @@
 							<img src="img/serv-slide3.jpg" width="465" height="285" alt="Кредит">
 							<button class="red-btn service-slide__red-btn">Отправить заявку</button>
 						</div>
-					</div>
+					</div> !-->
 				</div>
 			</section>
 		</div>
