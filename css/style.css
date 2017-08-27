@@ -605,7 +605,7 @@ a {
 .services-wrap {
 	width: inherit;
 	height: 522px;
-	margin-bottom: 70px;
+	margin-bottom: 80px;
 
 	background-color: #f4f8f9;
 }
@@ -692,13 +692,13 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 380px;
+	height: 370px;
 	margin-bottom: 86px;
 }
 
 .company-technomart {
-	width: 560px;
-	height: 380px;
+	width: 540px;
+	height: 370px;
 }
 
 .company-technomart .company-technomart__title,
@@ -734,8 +734,8 @@ a {
 
 
 .main-contacts {
-	width: 320px;
-	height: 380px;
+	width: 300px;
+	height: 370px;
 }
 
 .main-contacts .main-contacts__description {
@@ -1000,8 +1000,8 @@ a {
 
 /*		catalog.html		*/
 
-.navigation-main {
-	margin-bottom: 76px;
+.header-main--inner {
+	margin-bottom: 16px;
 }
 
 .user-login .user-login__btn--profil,
@@ -1021,7 +1021,7 @@ a {
 .breadcrumbs-list {
 	display: flex;
 	justify-content: space-between;
-	width: 380px;
+	width: 370px;
 	height: 27px;
 	margin: 0;
 	margin-bottom: 34px;
@@ -1033,6 +1033,7 @@ a {
 .breadcrumbs-list .breadcrumbs-list__item {
 	font-size: 13px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .main-container__title {
