@@ -11,26 +11,28 @@
 	<header class="header-main">
 		<div class="header-main-top">
 			<div class="container">
-				<div class="site-logo">
-					<a class="site-logo__btn" href="#">Техномарт</a>
+				<div class="header-main-top-wrap">
+					<div class="site-logo">
+						<a class="site-logo__btn" href="#">Техномарт</a>
+					</div>
+					
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label class="visually-hidden" for="search">Поиск:</label>
+						<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
+							placeholder="Поиск:">
+					</form>
+					
+					<ul class="user-tools">
+						<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
+						<li><a class="user-tools__item user-tools__item--red" href="#">Корзина: 10</a></li>
+						<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
+					</ul>
 				</div>
-				
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<label class="visually-hidden" for="search">Поиск:</label>
-					<input id="search" class="input search-form__input" type="text" name="search-text" value="" 
-						placeholder="Поиск:">
-				</form>
-				
-				<ul class="user-tools">
-					<li><a class="user-tools__item" href="#">Закладки: 0</a></li>
-					<li><a class="user-tools__item user-tools__item--red" href="#">Корзина: 10</a></li>
-					<li><a class="user-tools__item user-tools__item--green" href="#">Оформить заказ</a></li>
-				</ul>
 			</div>
 		</div>
 		
-		<div class="header-main-middle">
-			<div class="container">
+		<div class="container">
+			<div class="header-main-middle">
 				<p class="site-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				
 				<p class="header-main-contacts">
@@ -45,10 +47,8 @@
 					<a class="user-login__btn user-login__btn--acc" href="#">Личный кабинет</a>
 				</div>
 			</div>	
-		</div>
 		
-		<nav class="navigation-main">
-			<div class="container">
+			<nav class="navigation-main">
 				<ul	class="main-menu-list">
 					<li><a class="main-menu-list__item" href="index.html">Главная</a></li>
 					<li><a class="main-menu-list__item" href="#">Компания</a></li>
@@ -58,8 +58,8 @@
 					<li><a class="main-menu-list__item" href="#">Доставка</a></li>
 					<li><a class="main-menu-list__item" href="#">Контакты</a></li>
 				</ul>
-			</div>
-		</nav>	
+			</nav>	
+		</div>
 	</header>
 	
 	<main class="main-container">
@@ -282,8 +282,8 @@
 	</main>
 	
 	<footer class="footer-main">
-		<div class="footer-main-top">
-			<div class="container">
+		<div class="container">
+			<div class="footer-main-top">
 				<div class="site-logo">
 					<a class="site-logo__btn" href="#">Техномарт</a>
 				</div>
@@ -294,32 +294,36 @@
 					<li><a class="footer-menu-upper__item" href="#">Доставка</a></li>
 					<li><a class="footer-menu-upper__item" href="#">Контакты</a></li>
 				</ul>
+			</div>
+			<div class="footer-main-middle">
 				<p class="footer-main-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
 					+7 (812) 555-05-55</p>
 				<ul class="footer-menu-lower">
-					<li><a class="footer-menu-lower__item" href="#">Компания</a></li>
-					<li><a class="footer-menu-lower__item" href="#">Новости</a></li>
-					<li><a class="footer-menu-lower__item" href="#">Каталог</a></li>
-					<li><a class="footer-menu-lower__item" href="#">Доставка</a></li>
+					<li><a class="footer-menu-lower__item" href="#">Материалы</a></li>
+					<li><a class="footer-menu-lower__item" href="#">Техника</a></li>
+					<li><a class="footer-menu-lower__item" href="#">Инструмент</a></li>
+					<li><a class="footer-menu-lower__item" href="#">Спецпредложения</a></li>
 				</ul>
 			</div>
 		</div>
 		
-		<div class="footer-main-bottom">
+		<div class="footer-main-bottom-wrap">
 			<div class="container">
-				<p class="footer-copyright-technomart">© 2010–2017 Компания «Техномарт» Все права защищены</p>
-				<ul class="footer-social">
-					<li><a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a></li>
-					<li><a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a></li>
-					<li><a class="footer-social__btn footer-social__btn--ig" href="#">Инстаграм</a></li>
-				</ul>
-				<div class="footer-feedback">
-					<span>Обратная связь:</span>
-					<a class="footer-feedback__btn" href="#">mail@htmlacademy.ru</a>
-				</div>
-				<div class="footer-copyright-htmlacademy">
-					<span>Разработано:</span>
-					<a class="footer-copyright-htmlacademy__btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+				<div class="footer-main-bottom">
+					<p class="footer-copyright-technomart">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+					<ul class="footer-social">
+						<li><a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a></li>
+						<li><a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a></li>
+						<li><a class="footer-social__btn footer-social__btn--ig" href="#">Инстаграм</a></li>
+					</ul>
+					<div class="footer-feedback">
+						<span>Обратная связь:</span>
+						<a class="footer-feedback__btn" href="#">mail@htmlacademy.ru</a>
+					</div>
+					<div class="footer-copyright-htmlacademy">
+						<span>Разработано:</span>
+						<a class="footer-copyright-htmlacademy__btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+					</div>
 				</div>
 			</div>
 		</div>
