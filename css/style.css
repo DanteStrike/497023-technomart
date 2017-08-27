@@ -78,14 +78,14 @@ a {
 }
 
 .header-main {
-	height: 320px;
+	min-height: 320px;
 	margin-bottom: 59px;
 
 	background-color: #f1f5f7;
 }
 
 .header-main-top {
-	height: 42px;
+	min-height: 42px;
 
 	color: #ffffff;
 
@@ -95,7 +95,7 @@ a {
 .header-main-top-wrap {
 	display: flex;
 	width: 940px;
-	height: 42px;
+	min-height: 42px;
 }
 
 
@@ -229,7 +229,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 158px;
+	min-height: 158px;
 }
 
 
@@ -298,14 +298,14 @@ a {
 
 .navigation-main {
 	width: 940px;
-	height: 55px;
+	min-height: 55px;
 }
 
 .main-menu-list {
 	display: flex;
 	justify-content: space-around;
 	width: 940px;
-	height: 55px;
+	min-height: 55px;
 	margin: 0;
 	padding: 0;
 
@@ -336,7 +336,7 @@ a {
 
 .promo {
 	width: 940px;
-	height: 409px;
+	min-height: 409px;
 	margin-bottom: 53px;
 }
 
@@ -344,13 +344,13 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 123px;
+	min-height: 123px;
 	margin-bottom: 20px;
 }
 
 .promo-item {
 	width: 300px;
-	height: 123px;
+	min-height: 123px;
 }
 
 .promo-item .promo-item__title {
@@ -402,7 +402,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 266px;
+	min-height: 266px;
 }
 
 .promo-wrap-bottom .promo-wrap-bottom__right {
@@ -410,12 +410,12 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 300px;
-	height: 266px;
+	min-height: 266px;
 }
 
 .promo-slider-wrap {
 	width: 620px;
-	height: 266px;
+	min-height: 266px;
 
 	color: #ffffff;
 
@@ -458,12 +458,12 @@ a {
 }
 
 .popular-products {
-	height: 427px;
+	min-height: 427px;
 	margin-bottom: 21px;
 }
 
 .popular-manufacturers {
-	height: 419px;
+	min-height: 419px;
 	margin-bottom: 85px;
 }
 
@@ -472,7 +472,7 @@ a {
 	display: flex;
 	align-items: center;
 	width: 940px;
-	height: 89px;
+	min-height: 89px;
 	margin-bottom: 20px;
 
 	background-color: #f9f5f0;
@@ -481,7 +481,7 @@ a {
 .popular-products .popular-products__title,
 .popular-manufacturers .popular-manufacturers__title {
 	width: 400px;
-	height: 38px;
+	min-height: 38px;
 	margin: 0;
 	margin-right: auto;
 	padding: 0;
@@ -496,7 +496,7 @@ a {
 .popular-products .popular-products__red-btn,
 .popular-manufacturers .popular-popular-manufacturers__red-btn {
 	width: 300px;
-	height: 38px;
+	min-height: 38px;
 	margin-left: auto;
 }
 
@@ -509,14 +509,14 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 318px;
+	min-height: 318px;
 	margin: 0;
 	padding: 0;
 }
 
 .product {
 	width: 218px;
-	height: 316px;
+	min-height: 316px;
 
 	font-family: "PT Sans", "Times New Roman", sans-serif;
 	color: #000000;
@@ -552,7 +552,7 @@ a {
 
 	display: block;
 	width: 122px;
-	height: 38px;
+	min-height: 38px;
 
 	color: #ffffff;
 
@@ -578,14 +578,14 @@ a {
 	justify-content: space-between;
 	align-content: space-between;
 	width: 940px;
-	height: 310px;
+	min-height: 310px;
 	margin: 0;
 	padding: 0;
 }
 
 .manufacturers li {
 	width: 220px;
-	height: 145px;
+	min-height: 145px;
 	margin: 0;
 	padding: 0;
 }
@@ -593,7 +593,7 @@ a {
 .manufacturer {
 	display: flex;
 	width: 218px;
-	height: 143px;
+	min-height: 143px;
 
 	border: 1px solid #ebebeb;
 }
@@ -604,7 +604,7 @@ a {
 
 .services-wrap {
 	width: inherit;
-	height: 522px;
+	min-height: 522px;
 	margin-bottom: 80px;
 
 	background-color: #f4f8f9;
@@ -612,12 +612,12 @@ a {
 
 .services {
 	width: 940px;
-	height: 522px;
+	min-height: 522px;
 }
 
 .services .services__title {
 	width: 400px;
-	height: 108px;
+	min-height: 108px;
 	margin: 0;
 	padding: 0;
 
@@ -629,7 +629,7 @@ a {
 
 .services .services__description {
 	width: 400px;
-	height: 70px;
+	min-height: 70px;
 	margin: 0;
 	margin-bottom: 60px;
 	padding: 0;
@@ -640,7 +640,7 @@ a {
 }
 
 .service-slider-wrap {
-	height: 284px;
+	min-height: 284px;
 
 	background-color: #000000;
 }
@@ -692,13 +692,13 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 370px;
+	min-height: 370px;
 	margin-bottom: 86px;
 }
 
 .company-technomart {
 	width: 540px;
-	height: 370px;
+	min-height: 370px;
 }
 
 .company-technomart .company-technomart__title,
@@ -735,7 +735,7 @@ a {
 
 .main-contacts {
 	width: 300px;
-	height: 370px;
+	min-height: 370px;
 }
 
 .main-contacts .main-contacts__description {
@@ -751,17 +751,17 @@ a {
 
 .footer-main-top {
 	display: flex;
-	height: 63px;
+	min-height: 63px;
 	margin-bottom: 30px;
 }
 
 .footer-main-top .site-logo {
-	height: 63px;
+	min-height: 63px;
 }
 
 .footer-main-middle {
 	display: flex;
-	height: 100px;
+	min-height: 100px;
 }
 
 .footer-menu-upper,
@@ -825,7 +825,7 @@ a {
 .footer-main-bottom {
 	display: flex;
 	align-items: center;
-	height: 107px;
+	min-height: 107px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -853,7 +853,7 @@ a {
 
 .footer-social li {
 	width: 40px;
-	height: 40px;
+	min-height: 40px;
 	margin: 0;
 	padding: 0;
 }
@@ -861,7 +861,7 @@ a {
 .footer-social .footer-social__btn {
 	display: block;
 	width: inherit;
-	height: inherit;
+	min-height: inherit;
 
 	font-size: 0;
 	line-height: 22px;
@@ -906,7 +906,7 @@ a {
 	position: relative;
 
 	width: 940px;
-	height: 446px;
+	min-height: 446px;
 	margin-left: 10px;
 
 	background-color: #ffffff;
@@ -919,7 +919,7 @@ a {
 	right: 9px;
 
 	width: 21px;
-	height: 21px;
+	min-height: 21px;
 	margin: 0;
 	padding: 0;
 
@@ -935,7 +935,7 @@ a {
 .hover-product {
 	box-sizing: border-box;
 	width: 220px;
-	height: 170px;
+	min-height: 170px;
 	margin-left: 10px;
 	padding-top: 45px;
 
@@ -945,7 +945,7 @@ a {
 
 .hover-product .hover-product__buy {
 	width: 135px;
-	height: 35px;
+	min-height: 35px;
 	margin: 0;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -972,7 +972,7 @@ a {
 
 .hover-product .hover-product__bookmark {
 	width: 138px;
-	height: 35px;
+	min-height: 35px;
 	margin: 0;
 	margin-left: 42px;
 	padding: 0;
@@ -1022,7 +1022,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 370px;
-	height: 18px;
+	min-height: 18px;
 	margin: 0;
 	margin-bottom: 21px;
 	padding: 0;
@@ -1045,7 +1045,7 @@ a {
 }
 
 .main-container__title {
-	height: 89px;
+	min-height: 89px;
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 0;
@@ -1063,7 +1063,7 @@ a {
 .two-column-wrap {
 	display: flex;
 	justify-content: space-between;
-	height: 1142px;
+	min-height: 1142px;
 	margin-bottom: 128px;
 }
 
@@ -1079,7 +1079,7 @@ a {
 }
 
 .filters-title {
-	height: 38px;
+	min-height: 38px;
 	margin: 0;
 	margin-bottom: 11px;
 	padding: 0;
@@ -1135,7 +1135,7 @@ a {
 }
 
 .range-controls {
-	height: 81px;
+	min-height: 81px;
 	margin-bottom: 9px;
 
 	background-color: #f7f3ec;
@@ -1144,7 +1144,7 @@ a {
 .price-controls {
 	display: flex;
 	justify-content: space-between;
-	height: 38px;
+	min-height: 38px;
 	margin-bottom: 25px;
 }
 
@@ -1203,7 +1203,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 38px;
+	min-height: 38px;
 	margin-bottom: 20px;
 
 	background-color: #f7f3ec;
@@ -1259,7 +1259,7 @@ a {
 .sorting-list .sorting-list__item--up,
 .sorting-list .sorting-list__item--down {
 	width: 9px;
-	height: 8px;
+	min-height: 8px;
 
 	font-size: 0;
 
@@ -1272,7 +1272,7 @@ a {
 	justify-content: space-between;
 	align-content: space-between;
 	width: 700px;
-	height: 994px;
+	min-height: 994px;
 	margin: 0;
 	margin-bottom: 52px;
 	padding: 0;
@@ -1316,7 +1316,7 @@ a {
 }
 
 .about-perforators {
-	height: 130px;
+	min-height: 130px;
 	margin-bottom: 63px;
 }
 
@@ -1343,7 +1343,7 @@ a {
 	position: relative;
 
 	width: 620px;
-	height: 275px;
+	min-height: 275px;
 	margin-left: 10px;
 
 	background-color: #ffffff;
@@ -1370,7 +1370,7 @@ a {
 }
 
 .modal-add-bottom {
-	height: 112px;
+	min-height: 112px;
 
 	background-color: #f1f1f1;
 }
@@ -1388,7 +1388,7 @@ a {
 	right: 9px;
 
 	width: 21px;
-	height: 21px;
+	min-height: 21px;
 	margin: 0;
 	padding: 0;
 
