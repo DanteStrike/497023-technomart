@@ -217,7 +217,7 @@ a {
 .header-main-middle {
 	display: flex;
 	justify-content: space-between;
-	width: 940px
+	width: 940px;
 	height: 158px;
 }
 
