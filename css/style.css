@@ -78,6 +78,9 @@ a {
 }
 
 .header-main {
+	height: 320px;
+	margin-bottom: 59px;
+
 	background-color: #f1f5f7;
 }
 
@@ -296,7 +299,6 @@ a {
 .navigation-main {
 	width: 940px;
 	height: 55px;
-	margin-bottom: 119px;
 }
 
 .main-menu-list {
@@ -335,7 +337,7 @@ a {
 .promo {
 	width: 940px;
 	height: 409px;
-	margin-bottom: 78px;
+	margin-bottom: 53px;
 }
 
 .promo-wrap-top {
@@ -455,23 +457,25 @@ a {
 	font-size: 0;
 }
 
-.popular-products,
-.popular-manufacturers {
-	width: 940px;
-	height: 402px;
-	margin-bottom: 46px;
+.popular-products {
+	height: 427px;
+	margin-bottom: 21px;
 }
 
 .popular-manufacturers {
-	height: 394px;
+	height: 419px;
+	margin-bottom: 85px;
 }
 
 .popular-products-wrap,
 .popular-manufacturers-wrap {
 	display: flex;
+	align-items: center;
 	width: 940px;
-	height: 38px;
-	margin-bottom: 46px;
+	height: 89px;
+	margin-bottom: 20px;
+
+	background-color: #f9f5f0;
 }
 
 .popular-products .popular-products__title,
@@ -572,6 +576,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-content: space-between;
 	width: 940px;
 	height: 310px;
 	margin: 0;
@@ -579,18 +584,18 @@ a {
 }
 
 .manufacturers li {
-	width: 224px;
-	height: 147px;
+	width: 220px;
+	height: 145px;
 	margin: 0;
 	padding: 0;
 }
 
 .manufacturer {
 	display: flex;
-	width: 222px;
-	height: 145px;
+	width: 218px;
+	height: 143px;
 
-	border: 1px solid #eaeaea;
+	border: 1px solid #ebebeb;
 }
 
 .manufacturer img {
@@ -599,15 +604,15 @@ a {
 
 .services-wrap {
 	width: inherit;
-	height: inherit;
+	height: 522px;
+	margin-bottom: 70px;
 
 	background-color: #f4f8f9;
 }
 
 .services {
-	width: 940px
+	width: 940px;
 	height: 522px;
-	margin-bottom: 70px;
 }
 
 .services .services__title {
@@ -747,6 +752,7 @@ a {
 .footer-main-top {
 	display: flex;
 	height: 63px;
+	margin-bottom: 30px;
 }
 
 .footer-main-top .site-logo {
@@ -755,7 +761,7 @@ a {
 
 .footer-main-middle {
 	display: flex;
-	height: 130px;
+	height: 100px;
 }
 
 .footer-menu-upper,
@@ -994,6 +1000,10 @@ a {
 
 /*		catalog.html		*/
 
+.navigation-main {
+	margin-bottom: 76px;
+}
+
 .user-login .user-login__btn--profil,
 .user-login .user-login__btn--logof {
 	font-size: 21px;
@@ -1009,6 +1019,14 @@ a {
 }
 
 .breadcrumbs-list {
+	display: flex;
+	justify-content: space-between;
+	width: 380px;
+	height: 27px;
+	margin: 0;
+	margin-bottom: 34px;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -1018,6 +1036,11 @@ a {
 }
 
 .main-container__title {
+	width: 220px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
