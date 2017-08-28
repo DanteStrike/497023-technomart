@@ -47,20 +47,32 @@ a {
 	clip-path: inset(100%);
 }
 
+.icon {
+	position: absolute;
+	opacity: 0.3;
+	left: 17px;
+	fill: #ffffff;
+	pointer-events: none;
+}
 
-/*		index.html		*/
 .red-btn {
+	display: block;
+	min-height: 18px;
 	margin: 0;
 	padding: 0;
+	padding-top: 11px;
+	padding-bottom: 9px;
 
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Cuprum", "Times New Roman", sans-serif;
+	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
 
 	background-color: #ee3643;
 	border: 0;
+	border-radius: 2px;
 }
 
 .red-btn:hover {
@@ -76,6 +88,8 @@ a {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+/*		index.html		*/
 
 .header-main {
 	min-height: 320px;
@@ -100,39 +114,54 @@ a {
 
 
 .site-logo {
-	flex-basis: 220px;
+	width: 220px;
+	vertical-align: middle;
 }
 
 
 .site-logo .site-logo__btn {
+	display: block;
+	width: 220px;
+	min-height: 24px;
+	padding-top: 10px;
+	padding-bottom: 8px;
+
 	font-size: 24px;
 	line-height: 24px;
+	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
 
 	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
 }
 
 .site-logo .site-logo__btn:hover {
 	background-color: #ca2c37;
+	box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .site-logo .site-logo__btn:active {
 	background-color: #ba2732;
+	box-shadow: 0 5px 0 0 #8e1e26
 }
 
 .search-form {
-	flex-basis: 270px;
+	position: relative;
+	width: 270px;
 	margin: 0;
 	padding: 0;
-
+	vertical-align: middle;
 	background-color: #293449;
 }
 
 .search-form .search-form__input {
 	margin: 0;
 	padding: 0;
-
+	padding-bottom: 1px;
+	width: 221px;
+	min-height: 41px;
+	padding-left: 49px;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 17px;
@@ -142,16 +171,31 @@ a {
 
 	background-color: #293449;
 	border: 0;
+	outline: 0;
 }
 
 .search-form .search-form__input:hover {
 	background-color: #212a3a;
 }
 
+.search-form .search-form__input:hover ~ .search-form__icon {
+	opacity: 1;
+}
+
 .search-form .search-form__input:focus {
 	color: #000000;
 
 	background-color: #ffffff;
+}
+
+.search-form .search-form__input:focus ~ .search-form__icon {
+	fill: #ee3643;
+	opacity: 1;
+}
+
+.search-form .search-form__icon {
+	top: 12px;
+	bottom: 13px;
 }
 
 ::-webkit-input-placeholder {
@@ -177,14 +221,19 @@ a {
 }
 
 .user-tools li {
-	flex-basis: 150px;
+	position: relative;
+	width: 150px;
 	margin: 0;
 	padding: 0;
 }
 
 .user-tools .user-tools__item {
-	font-size: 18px;
-	line-height: 17px;
+	display: block;
+	height: 18px;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	font-size: 17px;
+	line-height: 18px;
 	color: #ffffff;
 
 	background-color: #293449;
@@ -194,21 +243,42 @@ a {
 	background-color: #212a3a;
 }
 
+.user-tools .user-tools__item:hover ~ .user-tools__icon {
+	opacity: 1;
+}
+
 .user-tools .user-tools__item:active {
 	color: rgba(255,255,255, 0.6);
 
 	background-color: #161d29;
 }
 
-.user-tools .user-tools__item--green {
-	background-color: #6db254;
+.user-tools .user-tools__item:active ~ .user-tools__icon {
+	opacity: 0.5;
 }
 
-.user-tools .user-tools__item--green:hover {
+.user-tools .user-tools__item--bookmark {
+	width: 106px;
+	padding-left: 44px;
+}
+
+.user-tools .user-tools__item--cart {
+	width: 100px;
+	padding-left: 50px;
+}
+
+.user-tools .user-tools__item--checkout {
+	width: 130px;
+	padding-left: 20px;
+
+	background-color: #63a63e;
+}
+
+.user-tools .user-tools__item--checkout:hover {
 	background-color: #5fbb2d;
 }
 
-.user-tools .user-tools__item--green:active {
+.user-tools .user-tools__item--checkout:active {
 	background-color: #518534;
 }
 
@@ -224,6 +294,17 @@ a {
 	background-color: #ba2732;
 }
 
+.user-tools .user-tools__icon {
+	top:12px;
+}
+
+.user-tools .user-tools__icon--cart {
+	left: 18px;
+}
+
+.user-tools .user-tools__icon--bookmark {
+	left: 17px;
+}
 
 .header-main-middle {
 	display: flex;
@@ -470,7 +551,6 @@ a {
 .popular-products-wrap,
 .popular-manufacturers-wrap {
 	display: flex;
-	align-items: center;
 	width: 940px;
 	min-height: 89px;
 	margin-bottom: 20px;
@@ -495,8 +575,10 @@ a {
 
 .popular-products .popular-products__red-btn,
 .popular-manufacturers .popular-popular-manufacturers__red-btn {
-	width: 300px;
-	min-height: 38px;
+	width: 253px;
+	margin-top: 25px;
+	margin-right: 24px;
+	margin-bottom: 26px;
 	margin-left: auto;
 }
 
