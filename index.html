@@ -305,7 +305,7 @@
 					<p class="company-technomart__description">Настоящий мужской шоппинг начинается здесь! 
 						Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей 
 						сэкономить на гастарбайтерах.</p>
-					<p class="company-technomart__description">Мы можем доставить ваш товар в самые отдаленные 
+					<p class="company-technomart__description company-technomart__description--second">Мы можем доставить ваш товар в самые отдаленные 
 						точки России! Техномарт работает со многими транспортными компаниями: </p>
 					<ul class="routes-list">
 						<li class="routes-list__item">Деловые линии</li>
@@ -381,13 +381,32 @@
 	<!--Modals-map--><hr>
 	<section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <button class="modal-map__close">Закрыть</button>
+      <button class="btn-close">Закрыть</button>
     </section>
 	<!--Modals-hover--><hr>
 	<div class="hover-product">
 		<button class="hover-product__buy">Купить</button>
 		<button class="hover-product__bookmark">В закладки</button>
 	</div>
-	
+	<!--Modals-feedback--><hr>
+	<section class="modal modal-feedback">
+		<div class="modal-feedback__container">
+			<h2 class="visually-hidden">Обратная связь</h2>
+			<div class="modal-feedback__top-wrap">
+				<div class="modal-feedback__top-left">
+					<label class="modal-feedback__title" for="mdl-name">Ваше имя:</label>
+					<input class="modal-feedback__input" type="text" name="modal-feedback__name" id="mdl-name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="modal-feedback__top-right">
+					<label class="modal-feedback__title" for="mdl-mail">Ваш e-mail:</label>
+					<input class="modal-feedback__input" type="e-mail" name="modal-feedback__mail" id="mdl-mail" placeholder="Для отправки ответа">
+				</div>
+			</div>
+			<label class="modal-feedback__title modal-feedback__title--latter" for="mdl-latter">Текст письма:</label>
+			<textarea class="modal-feedback__latter" id="mdl-latter" placeholder="В свободной форме"></textarea>
+			<button class="red-btn modal-feedback__red-btn">Отправить</button>
+			<button class="btn-close">Закрыть</button>
+		</div>
+	</section>
   </body>
 </html>
