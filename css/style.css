@@ -138,9 +138,8 @@ _:-ms-fullscreen,
 .site-logo .site-logo__btn {
 	display: block;
 	width: 220px;
-	min-height: 24px;
+	min-height: 32px;
 	padding-top: 10px;
-	padding-bottom: 8px;
 
 	font-size: 24px;
 	line-height: 24px;
@@ -165,7 +164,6 @@ _:-ms-fullscreen,
 .search-form {
 	position: relative;
 
-	width: 270px;
 	margin: 0;
 	padding: 0;
 
@@ -233,7 +231,7 @@ _:-ms-fullscreen,
 
 .user-tools {
 	display: flex;
-	width: 450px;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 
@@ -243,7 +241,6 @@ _:-ms-fullscreen,
 .user-tools li {
 	position: relative;
 
-	width: 150px;
 	margin: 0;
 	padding: 0;
 }
@@ -331,16 +328,14 @@ _:-ms-fullscreen,
 .header-main-middle {
 	display: flex;
 	justify-content: space-between;
-	width: 940px;
 	min-height: 158px;
 }
 
 .site-description {
-	width: 200px;
+	width: 248px;
 	margin: 0;
 	padding: 0;
 	padding-top: 49px;
-	padding-right: 48px;
 	padding-left: 52px;
 
 	font-size: 16px;
@@ -360,10 +355,10 @@ _:-ms-fullscreen,
 	position: relative;
 
 	display: block;
-	width: 193px;
+	width: 203px;
 	min-height: 18px;
+	margin-bottom: 14px;
 	padding-top: 11px;
-	padding-bottom: 10px;
 	padding-left: 71px;
 
 	font-size: 21px;
@@ -389,8 +384,7 @@ _:-ms-fullscreen,
 .header-main-address {
 	display: block;
 	width: 270px;
-	min-height: 24px;
-	padding-top: 4px;
+	min-height: 28px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -410,22 +404,21 @@ _:-ms-fullscreen,
 	position: relative;
 
 	display: inline-block;
-	min-height: 18px;
+	min-height: 31px;
 	margin: 0;
 	padding: 0;
 	padding-top: 14px;
-	padding-bottom: 13px;
 
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Cuprum", "Times New Roman", sans-serif;
+	vertical-align: top;
 	text-align: left;
 	color: #32425c;
 
 	background-color: #ffffff;
 	border: 0;
 	cursor: pointer;
-	vertical-align: top;
 }
 
 .user-login .user-login__btn:hover {
@@ -492,23 +485,28 @@ _:-ms-fullscreen,
 .user-login .user-login__btn--orders,
 .user-login .user-login__btn--acc {
 	padding: 0;
+
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
 	text-decoration: underline;
+
+	background-color: #f2f6f8;
 }
 
 .user-login .user-login__btn--orders {
+	min-height: 19px;
 	margin-right: 32px;
 }
 
 .user-login .user-login__btn--orders::after {
 	content: "";
 	position: absolute;
-	left: 90px;
 	bottom: 8px;
-	border-radius: 50% 50%;
+	left: 90px;
+
 	border: 2px solid #32425c;
+	border-radius: 50% 50%;
 }
 
 .user-login .user-login__btn--acc {
@@ -518,8 +516,9 @@ _:-ms-fullscreen,
 .user-login .user-login__profile {
 	width: 299px;
 	min-height: 45px;
+	margin-bottom: 8px;
 	margin-left: 1px;
-	margin-bottom: 8px; 
+
 	font-size: 0;
 
 	background-color: #ffffff;
@@ -574,10 +573,9 @@ _:-ms-fullscreen,
 
 .main-menu-list .main-menu-list__item {
 	display: block;
-	min-height: 20px;
+	min-height: 37px;
 	padding-top: 18px;
 	padding-right: 31px;
-	padding-bottom: 17px;
 	padding-left: 31px;
 
 	font-size: 17px;
