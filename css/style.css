@@ -2,7 +2,6 @@
 
 html,
 body {
-	display: :block;
 	min-width: 1200px;
 	margin: 0;
 	padding: 0;
@@ -26,17 +25,19 @@ a {
 }
 
 /* IE 11 visually-hidden */
-_:-ms-fullscreen, :root .visually-hidden {
-  position: absolute;
+_:-ms-fullscreen,
+:root .visually-hidden {
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	border: 0;
+
+	clip: rect(0 0 0 0);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -63,8 +64,10 @@ _:-ms-fullscreen, :root .visually-hidden {
 
 .icon {
 	position: absolute;
-	opacity: 0.3;
 	left: 17px;
+
+	opacity: 0.3;
+
 	fill: #ffffff;
 	pointer-events: none;
 }
@@ -129,7 +132,6 @@ _:-ms-fullscreen, :root .visually-hidden {
 
 .site-logo {
 	width: 220px;
-	vertical-align: middle;
 }
 
 
@@ -157,25 +159,27 @@ _:-ms-fullscreen, :root .visually-hidden {
 
 .site-logo .site-logo__btn:active {
 	background-color: #ba2732;
-	box-shadow: 0 5px 0 0 #8e1e26
+	box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .search-form {
 	position: relative;
+
 	width: 270px;
 	margin: 0;
 	padding: 0;
-	vertical-align: middle;
+
 	background-color: #293449;
 }
 
 .search-form .search-form__input {
+	width: 221px;
+	min-height: 41px;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 1px;
-	width: 221px;
-	min-height: 41px;
 	padding-left: 49px;
+
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 17px;
@@ -186,6 +190,7 @@ _:-ms-fullscreen, :root .visually-hidden {
 	background-color: #293449;
 	border: 0;
 	outline: 0;
+	cursor: pointer;
 }
 
 .search-form .search-form__input:hover {
@@ -203,8 +208,9 @@ _:-ms-fullscreen, :root .visually-hidden {
 }
 
 .search-form .search-form__input:focus ~ .search-form__icon {
-	fill: #ee3643;
 	opacity: 1;
+
+	fill: #ee3643;
 }
 
 .search-form .search-form__icon {
@@ -236,6 +242,7 @@ _:-ms-fullscreen, :root .visually-hidden {
 
 .user-tools li {
 	position: relative;
+
 	width: 150px;
 	margin: 0;
 	padding: 0;
@@ -246,6 +253,7 @@ _:-ms-fullscreen, :root .visually-hidden {
 	height: 18px;
 	padding-top: 13px;
 	padding-bottom: 11px;
+
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
@@ -309,7 +317,7 @@ _:-ms-fullscreen, :root .visually-hidden {
 }
 
 .user-tools .user-tools__icon {
-	top:12px;
+	top: 12px;
 }
 
 .user-tools .user-tools__icon--cart {
@@ -327,13 +335,13 @@ _:-ms-fullscreen, :root .visually-hidden {
 	min-height: 158px;
 }
 
-
-
-
 .site-description {
-	flex-basis: 300px;
+	width: 200px;
 	margin: 0;
 	padding: 0;
+	padding-top: 49px;
+	padding-right: 48px;
+	padding-left: 52px;
 
 	font-size: 16px;
 	line-height: 23px;
@@ -342,46 +350,102 @@ _:-ms-fullscreen, :root .visually-hidden {
 }
 
 .header-main-contacts {
-	flex-basis: 300px;
+	width: 300px;
 	margin: 0;
 	padding: 0;
+	padding-top: 46px;
 }
 
 .header-main-phone {
+	position: relative;
+
+	display: block;
+	width: 193px;
+	min-height: 18px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	padding-left: 71px;
+
 	font-size: 21px;
 	line-height: 18px;
 	color: #ee3643;
+
+	border: 3px solid #ffffff;
+}
+
+.header-main-phone::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 13px;
+
+	width: 18px;
+	height: 19px;
+
+	background-image: url(../img/icon-phone.svg);
+	background-repeat: no-repeat;
 }
 
 .header-main-address {
+	display: block;
+	width: 270px;
+	min-height: 24px;
+	padding-top: 4px;
+
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 	color: #32425c;
 }
 
 .user-login {
-	flex-basis: 300px;
+	width: 300px;
+	padding-top: 46px;
+
+	font-size: 0;
+	text-align: right;
 }
 
 .user-login .user-login__btn {
+	position: relative;
+
+	display: inline-block;
+	min-height: 18px;
 	margin: 0;
 	padding: 0;
+	padding-top: 14px;
+	padding-bottom: 13px;
 
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Cuprum", "Times New Roman", sans-serif;
+	text-align: left;
 	color: #32425c;
 
-	background-color: #f3f7f9;
+	background-color: #ffffff;
 	border: 0;
+	cursor: pointer;
+	vertical-align: top;
 }
 
 .user-login .user-login__btn:hover {
 	color: #ee3643;
 }
 
+.user-login__btn--auth:hover .user-login__icon--login,
+.user-login__btn--logof:hover .user-login__icon--logoff,
+.user-login__btn--name:hover .user-login__icon--name {
+	fill: #32425c;
+}
+
 .user-login .user-login__btn:active {
 	color: rgba(0,0,0, 0.3);
+}
+
+.user-login__btn--auth:active .user-login__icon--login,
+.user-login__btn--logof:active .user-login__icon--logoff,
+.user-login__btn--name:active .user-login__icon--name {
+	fill: #c5c5c5;
 }
 
 .user-login .user-login__btn--auth,
@@ -391,25 +455,131 @@ _:-ms-fullscreen, :root .visually-hidden {
 	color: #000000;
 }
 
+.user-login .user-login__btn--auth {
+	width: 73px;
+	margin-right: 10px;
+	padding-left: 48px;
+}
+
+.user-login .user-login__btn--reg {
+	width: 150px;
+
+	text-align: center;
+}
+
+.user-login .user-login__btn--name,
+.user-login .user-login__btn--logof {
+	font-size: 21px;
+	line-height: 18px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.user-login .user-login__btn--name {
+	width: 198px;
+	margin-right: 14px;
+	padding-left: 47px;
+}
+
+.user-login .user-login__btn--logof {
+	width: 40px;
+	min-height: 45px;
+
+	font-size: 0;
+}
+
+.user-login .user-login__btn--orders,
+.user-login .user-login__btn--acc {
+	padding: 0;
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.user-login .user-login__btn--orders {
+	margin-right: 32px;
+}
+
+.user-login .user-login__btn--orders::after {
+	content: "";
+	position: absolute;
+	left: 90px;
+	bottom: 8px;
+	border-radius: 50% 50%;
+	border: 2px solid #32425c;
+}
+
+.user-login .user-login__btn--acc {
+	margin-right: 72px;
+}
+
+.user-login .user-login__profile {
+	width: 299px;
+	min-height: 45px;
+	margin-left: 1px;
+	margin-bottom: 8px; 
+	font-size: 0;
+
+	background-color: #ffffff;
+}
+
+.user-login .user-login__icon {
+	bottom: 14px;
+
+	opacity: 1;
+
+	fill: #c5c5c5;
+}
+
+
+.user-login .user-login__icon--login {
+	left: 14px;
+}
+
+.user-login .user-login__icon--logoff {
+	left: 10px;
+}
+
+.user-login .user-login__icon--name {
+	left: 13px;
+}
+
 .navigation-main {
 	width: 940px;
 	min-height: 55px;
+
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
 }
 
 .main-menu-list {
-	display: flex;
-	justify-content: space-around;
-	width: 940px;
+	width: 904px;
 	min-height: 55px;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 
 	list-style: none;
+	font-size: 0;
+}
 
-	background-color: #32425c;
+.main-menu-list li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+
+	vertical-align: top;
 }
 
 .main-menu-list .main-menu-list__item {
+	display: block;
+	min-height: 20px;
+	padding-top: 18px;
+	padding-right: 31px;
+	padding-bottom: 17px;
+	padding-left: 31px;
+
 	font-size: 17px;
 	line-height: 20px;
 	color: #ffffff;
@@ -1098,20 +1268,6 @@ _:-ms-fullscreen, :root .visually-hidden {
 
 .header-main--inner {
 	margin-bottom: 20px;
-}
-
-.user-login .user-login__btn--profil,
-.user-login .user-login__btn--logof {
-	font-size: 21px;
-	line-height: 18px;
-	color: #000000;
-
-	background-color: #ffffff;
-}
-
-.user-login .user-login__btn--orders,
-.user-login .user-login__btn--acc {
-	text-decoration: underline;
 }
 
 .breadcrumbs-list {
