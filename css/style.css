@@ -756,7 +756,7 @@ _:-ms-fullscreen,
 	width: 300px;
 	min-height: 266px;
 }
-
+/*
 .promo-slider-wrap {
 	width: 620px;
 	min-height: 266px;
@@ -799,6 +799,143 @@ _:-ms-fullscreen,
 
 .promo-slides .slider-btn {
 	font-size: 0;
+} */
+
+.promo-slider-wrap {
+	position: relative;
+
+	width: 620px;
+	height: 266px;
+
+	background-color: #000000;
+}
+
+.promo-slider-controls {
+	position: absolute;
+	bottom: 36px;
+	left: 50%;
+	z-index: 10;
+
+	width: 40px;
+	min-height: 10px;
+	margin: 0;
+	margin-left: -20px;
+	padding: 0;
+
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+}
+
+.controls {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50% 50%;
+	cursor: pointer;
+}
+
+.promo-slider-controls .controls:first-of-type {
+	margin-right: 10px;
+}
+
+.promo-point-left,
+.promo-point-right {
+	display: none;
+}
+
+
+.promo-slide {
+	position: absolute;
+
+	color: #ffffff;
+}
+
+.promo-slide .promo-slide__title {
+	position: absolute;
+	top: 20px;
+	left: 24px;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 36px;
+	line-height: 43px;
+	text-transform: uppercase;
+}
+.promo-slide .promo-slide__description {
+	position: absolute;
+	top: 62px;
+	left: 24px;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 18px;
+	line-height: 22px;
+	font-family: "PT Sans", "Times New Roman", sans-serif;
+}
+
+.promo-slides {
+}
+
+.promo-point-left:checked ~ .promo-slider-controls .controls-1,
+.promo-point-right:checked ~ .promo-slider-controls .controls-2 {
+	background-color: #ee3643;
+}
+
+.promo-point-left:checked ~ .promo-slides .promo-slide--pp1,
+.promo-point-right:checked ~ .promo-slides .promo-slide--pp2 {
+	z-index: 5;
+}
+
+.promo-slider-wrap .promo-slider-wrap__red-btn {
+	position: absolute;
+	bottom: 22px;
+	left: 25px;
+	z-index: 10;
+
+	width: 192px;
+	padding-left: 3px;
+}
+
+.slider-btn {
+	position: absolute;
+	bottom: 112px;
+	z-index: 10;
+
+	display: block;
+	width: 22px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 0 none;
+	cursor: pointer;
+}
+
+.slider-btn--prev {
+	left: 25px;
+
+	background-image: url("../img/icon-left.svg");
+}
+
+.slider-btn--next {
+	right: 20px;
+
+	background-image: url("../img/icon-right.svg");
 }
 
 .popular-products {
@@ -864,6 +1001,8 @@ _:-ms-fullscreen,
 }
 
 .product {
+	position: relative;
+
 	width: 218px;
 	min-height: 316px;
 
@@ -873,6 +1012,29 @@ _:-ms-fullscreen,
 
 	background-color: #ffffff;
 	border: 1px solid #eaeaea;
+}
+
+.product:hover {
+	border: 1px solid #ffffff;
+	box-shadow: 0 0 25px 0 rgba(41,52,73, 0.5);
+}
+.product:hover .hover-product {
+	z-index: 4;
+}
+
+.product--new::after {
+	content: "";
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	z-index: 5;
+
+	width: 60px;
+	height: 59px;
+
+	background-image: url("../img/new-flag.png");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .product .product__title {
@@ -1373,24 +1535,31 @@ _:-ms-fullscreen,
 }
 
 .hover-product {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
 	box-sizing: border-box;
-	width: 220px;
+	width: 218px;
 	min-height: 170px;
-	margin-left: 10px;
-	padding-top: 45px;
+	padding-top: 44px;
+
+	text-align: left;
 
 	background-color: #ffffff;
-	border: 1px solid black;
 }
 
 .hover-product .hover-product__buy {
 	position: relative;
+
+	display: block;
 	width: 135px;
 	min-height: 38px;
 	margin: 0;
 	margin: 0 auto;
-	margin-bottom: 10px;
-	margin-left: 42px;
+	margin-bottom: 7px;
+	margin-left: 41px;
 	padding: 0;
 	padding-top: 6px;
 
@@ -1401,7 +1570,7 @@ _:-ms-fullscreen,
 	text-transform: uppercase;
 
 	background-color: #63a63e;
-	border: 0;
+	border: 0 none;
 	border-bottom: 3px solid #367315;
 	border-radius: 3px;
 	outline: 0;
@@ -1410,10 +1579,12 @@ _:-ms-fullscreen,
 
 .hover-product .hover-product__icon {
 	position: absolute;
+	top: 11px;
+	left: 12px;
+
 	width: 15px;
 	height: 15px;
-	left: 12px;
-	top: 11px;
+
 	opacity: 0.3;
 }
 
@@ -1436,10 +1607,11 @@ _:-ms-fullscreen,
 }
 
 .hover-product .hover-product__bookmark {
+	display: block;
 	width: 135px;
 	min-height: 38px;
 	margin: 0;
-	margin-left: 42px;
+	margin-left: 41px;
 	padding: 0;
 
 	font-size: 14px;
