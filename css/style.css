@@ -22,6 +22,8 @@ a {
 	padding: 0;
 
 	text-decoration: none;
+
+	overflow-wrap: break-word;
 }
 
 /* IE 11 visually-hidden */
@@ -127,17 +129,11 @@ _:-ms-fullscreen,
 .header-main-top-wrap {
 	display: flex;
 	width: 940px;
-	height: 42px;
+	min-height: 42px;
 }
 
 
 .site-logo {
-	width: 220px;
-}
-
-
-.site-logo .site-logo__btn {
-	display: block;
 	width: 220px;
 	min-height: 32px;
 	padding-top: 10px;
@@ -152,17 +148,17 @@ _:-ms-fullscreen,
 	box-shadow: 0 5px 0 0 #b52933;
 }
 
-.site-logo .site-logo__btn:hover {
+.site-logo:hover {
 	background-color: #ca2c37;
 	box-shadow: 0 5px 0 0 #9a212a;
 }
 
-.site-logo .site-logo__btn:active {
+.site-logo:active {
 	background-color: #ba2732;
 	box-shadow: 0 5px 0 0 #8e1e26;
 }
 
-.site-logo .site-logo__btn--footer {
+.site-logo--footer {
 	min-height: 47px;
 	padding-top: 16px;
 
@@ -256,7 +252,7 @@ _:-ms-fullscreen,
 
 .user-tools .user-tools__item {
 	display: block;
-	height: 18px;
+	min-height: 18px;
 	padding-top: 13px;
 	padding-bottom: 11px;
 
@@ -337,7 +333,7 @@ _:-ms-fullscreen,
 .header-main-middle {
 	display: flex;
 	justify-content: space-between;
-	height: 158px;
+	min-height: 158px;
 }
 
 .site-description {
@@ -574,6 +570,7 @@ _:-ms-fullscreen,
 
 .main-menu-list li {
 	display: inline-block;
+	max-width: 904px;
 	margin: 0;
 	padding: 0;
 
@@ -648,6 +645,8 @@ _:-ms-fullscreen,
 	font-size: 24px;
 	line-height: 30px;
 	color: #ffffff;
+
+	overflow-wrap: break-word;
 }
 
 .promo-item .promo-item__btn {
@@ -913,7 +912,7 @@ _:-ms-fullscreen,
 .popular-manufacturers-wrap {
 	display: flex;
 	width: 940px;
-	height: 89px;
+	min-height: 89px;
 	margin-bottom: 20px;
 
 	background-color: #f9f5f0;
@@ -934,10 +933,14 @@ _:-ms-fullscreen,
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
+
+	overflow-wrap: break-word;
 }
 
 .popular-manufacturers .popular-manufacturers__title {
 	margin-left: 26px;
+
+	overflow-wrap: break-word;
 }
 
 .popular-products .popular-products__red-btn,
@@ -956,6 +959,7 @@ _:-ms-fullscreen,
 
 .products {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
@@ -1011,6 +1015,8 @@ _:-ms-fullscreen,
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
+
+	overflow-wrap: break-word;
 }
 
 .product .product__price {
@@ -1134,6 +1140,8 @@ _:-ms-fullscreen,
 	font-size: 30px;
 	line-height: 24px;
 	text-transform: uppercase;
+
+	overflow-wrap: break-word;
 }
 
 .services .services__description {
@@ -1185,7 +1193,7 @@ _:-ms-fullscreen,
 
 .service-slider__btn {
 	display: block;
-	height: 46px;
+	min-height: 46px;
 	margin: 0;
 	padding: 0;
 	padding-top: 14px;
@@ -1233,6 +1241,8 @@ _:-ms-fullscreen,
 	line-height: 24px;
 	color: #32425c;
 	text-transform: uppercase;
+
+	overflow-wrap: break-word;
 }
 
 .service-slide .service-slide__description {
@@ -1291,7 +1301,7 @@ _:-ms-fullscreen,
 .container-about-company {
 	display: flex;
 	justify-content: space-between;
-	height: 368px;
+	min-height: 368px;
 	margin-bottom: 86px;
 }
 
@@ -1309,6 +1319,8 @@ _:-ms-fullscreen,
 	font-size: 30px;
 	line-height: 24px;
 	text-transform: uppercase;
+
+	overflow-wrap: break-word;
 }
 
 .company-technomart .company-technomart__description {
@@ -1380,13 +1392,13 @@ _:-ms-fullscreen,
 
 .footer-main-top {
 	display: flex;
-	height: 63px;
+	min-height: 63px;
 	margin-bottom: 20px;
 }
 
 .footer-main-middle {
 	display: flex;
-	height: 110px;
+	min-height: 110px;
 }
 
 .footer-menu-upper {
@@ -1448,7 +1460,9 @@ _:-ms-fullscreen,
 }
 
 .footer-main-contacts {
+	width: 340px;
 	margin: 0;
+	margin-right: auto;
 	padding: 0;
 	padding-top: 13px;
 	padding-left: 3px;
@@ -1463,7 +1477,7 @@ _:-ms-fullscreen,
 
 .footer-main-bottom {
 	display: flex;
-	height: 71px;
+	min-height: 71px;
 	padding-top: 36px;
 
 	font-size: 16px;
@@ -1592,6 +1606,7 @@ _:-ms-fullscreen,
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 0;
+	cursor: pointer;
 }
 
 .hover-product {
@@ -1738,6 +1753,8 @@ _:-ms-fullscreen,
 
 	font-size: 18px;
 	line-height: 18px;
+
+	overflow-wrap: break-word;
 }
 
 .modal-feedback .modal-feedback__input {
