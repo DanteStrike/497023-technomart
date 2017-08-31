@@ -2160,7 +2160,7 @@ _:-ms-fullscreen,
 	background-image: url("../img/checkbox-off-hover.svg");
 }
 
-.manufacturers-list input[type=checkbox]:not(:disabled):checked + label::before {
+.manufacturers-list input[type=checkbox]:checked + label::before {
 	width: 27px;
 	height: 23px;
 
@@ -2209,7 +2209,7 @@ _:-ms-fullscreen,
 	background-image: url("../img/radio-off-hover.svg");
 }
 
-.power-list input[type=radio]:not(:disabled):checked + label::before {
+.power-list input[type=radio]:checked + label::before {
 	background-image: url("../img/radio-on.svg");
 }
 
