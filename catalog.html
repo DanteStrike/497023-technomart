@@ -95,16 +95,18 @@
 							<fieldset class="filter-price">
 								<legend class="filter-price__title">Цена:</legend>
 								<div class="range-controls">
-									<div class="range-controls__scale">-------</div>
+									<div class="range-controls__bar">
+										<div class="range-controls__scale"></div>
+									</div>
 									<div class="range-controls__toggle range-controls__toggle--min"></div>
 									<div class="range-controls__toggle range-controls__toggle--max"></div>
 								</div>
 								<div class="price-controls">
 									<label class="visually-hidden" for="i_min">Минимум</label>                    
 									<input class="price-controls__min" id="i_min" name="min" type="text" value="0">
-									<div class="price-controls__separator">-</div>
+									<div class="price-controls__separator">—</div>
 									<label class="visually-hidden" for="i_mах">Максимум</label>  
-									<input class="price-controls__max" id="i_mах" name="max" type="text" value="3000">
+									<input class="price-controls__max" id="i_mах" name="max" type="text" value="30000">
 								</div>	
 							</fieldset>
 							
@@ -135,7 +137,7 @@
 									<li class="manufacturers-list__item">
 										<input class="visually-hidden filter-input 
 											filter-input--checkbox" type="checkbox" name="manufacturer" 
-											value="4" id="dewalt">
+											value="4" id="dewalt" disabled>
 										<label for="dewalt">Dewalt</label>
 									</li>
 		         
@@ -161,7 +163,7 @@
 									<li class="power-list__item">
 										<input class="visually-hidden filter-input
 											filter-input--radio" type="radio" name="power-group" 
-											value="2" id="con">
+											value="2" id="con" disabled>
 										<label for="con">Сетевые</label>							
 									</li>
 								</ul>
@@ -177,8 +179,12 @@
 							<li class="sorting-list__item sorting-list__item--active">По цене</li>
 							<li class="sorting-list__item">По типу</li>
 							<li class="sorting-list__item">По функционалу</li>
-							<li class="sorting-list__item sorting-list__item--up">По возрастанию</li>
-							<li class="sorting-list__item sorting-list__item--down">По убыванию</li>
+							<li class="sorting-list__item sorting-list__item--up">По возрастанию
+								<svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+							</li>
+							<li class="sorting-list__item sorting-list__item--down">По убыванию
+								<svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+							</li>
 						</ul>
 					</section>
 					
@@ -193,6 +199,12 @@
 									<span class="product__discount">22500 Р.</span>
 									<span class="product__cost">15500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
 							<li class="product">
@@ -203,9 +215,15 @@
 									<span class="product__discount">30500 Р.</span>
 									<span class="product__cost">25500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
-							<li class="product">
+							<li class="product flag-new">
 								<img class="product__image" src="img/product-4.jpg" width="218" height="170" 
 										alt="Перфоратор BOSCH BFG 2000">
 								<h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
@@ -213,6 +231,12 @@
 									<span class="product__discount product__discount--false">12500 Р.</span>
 									<span class="product__cost">12500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
 							<li class="product">
@@ -223,9 +247,15 @@
 									<span class="product__discount">22500 Р.</span>
 									<span class="product__cost">15500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
-							<li class="product">
+							<li class="product flag-new">
 								<img class="product__image" src="img/product-3.jpg" width="218" height="170" 
 										alt="Перфоратор BOSCH BFG 6000">
 								<h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
@@ -233,6 +263,12 @@
 									<span class="product__discount">30500 Р.</span>
 									<span class="product__cost">25500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
 							<li class="product">
@@ -243,9 +279,15 @@
 									<span class="product__discount product__discount--false">12500 Р.</span>
 									<span class="product__cost">12500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
-							<li class="product">
+							<li class="product flag-new">
 								<img class="product__image" src="img/product-2.jpg" width="218" height="170" 
 										alt="Перфоратор BOSCH BFG 3000">
 								<h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
@@ -253,6 +295,12 @@
 									<span class="product__discount">22500 Р.</span>
 									<span class="product__cost">15500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
 							<li class="product">
@@ -263,6 +311,12 @@
 									<span class="product__discount">30500 Р.</span>
 									<span class="product__cost">25500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 							
 							<li class="product">
@@ -273,6 +327,12 @@
 									<span class="product__discount product__discount--false">12500 Р.</span>
 									<span class="product__cost">12500 Р.</span>
 								</p>
+								<div class="hover-product">
+									<button class="hover-product__buy">Купить
+										<svg class="hover-product__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+									</button>
+									<button class="hover-product__bookmark">В закладки</button>
+								</div>
 							</li>
 						</ul>
 					</section>
@@ -281,7 +341,7 @@
 						<li><a class="pagination-list__item pagination-list__item--current">1</a></li>
 						<li><a class="pagination-list__item" href="#">2</a></li>
 						<li><a class="pagination-list__item" href="#">3</a></li>
-						<li><a class="pagination-list__item" href="#">Следующая</a></li>
+						<li><a class="pagination-list__item pagination-list__item--last" href="#">Следующая</a></li>
 					</ul>
 				</div>
 			</div>
@@ -290,8 +350,8 @@
 		<div class="container">
 			<section class="about-perforators">
 				<h2 class="about-perforators__title">Пара слов о перфораторах</h2>
-				<p class="about-perforators__description">Перфоратор — универсальный строительный инструмент. 
-					Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. 
+				<p class="about-perforators__description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. </p>
+				<p class="about-perforators__description">
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут 
 					выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть 
 					выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
