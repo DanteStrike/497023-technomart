@@ -361,8 +361,8 @@ _:-ms-fullscreen,
 
 	display: block;
 	width: 203px;
-	min-height: 18px;
-	margin-bottom: 14px;
+	min-height: 28px;
+	margin-bottom: 4px;
 	padding-top: 11px;
 	padding-left: 71px;
 
@@ -2237,6 +2237,7 @@ _:-ms-fullscreen,
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .form-filters .form-filters__btn:hover {
@@ -2418,9 +2419,12 @@ _:-ms-fullscreen,
 	border: 1px solid #ee3643;
 }
 
-.pagination-list .pagination-list__item--current {
+.pagination-list .pagination-list__item--current,
+.pagination-list .pagination-list__item--current:hover,
+.pagination-list .pagination-list__item--current:active {
 	color: #ffffff;
-
+	cursor: default;
+	outline: 0;
 	background-color: #ee3643;
 	border: 0 none;
 }
