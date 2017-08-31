@@ -166,6 +166,20 @@ _:-ms-fullscreen,
 	line-height: 30px;
 }
 
+.site-logo--main {
+	cursor: default;
+}
+
+.site-logo--main:hover {
+	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
+}
+
+.site-logo--main:active {
+	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
+}
+
 .search-form {
 	position: relative;
 
@@ -337,11 +351,12 @@ _:-ms-fullscreen,
 }
 
 .site-description {
-	width: 248px;
+	width: 200px;
 	margin: 0;
 	padding: 0;
 	padding-top: 49px;
 	padding-left: 52px;
+	padding-right: 48px;
 
 	font-size: 16px;
 	line-height: 23px;
