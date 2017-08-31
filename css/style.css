@@ -25,6 +25,37 @@ a {
 
 	overflow-wrap: break-word;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promo-slide img {
+	min-width: 620px;
+	height: 266px;
+}
+
+.product img {
+	min-width: 218px;
+	height: 170px;
+}
+
+.manufacturer img {
+	min-width: 218px;
+	height: 143px;
+}
+
+.service-slide img {
+	min-width: 630px;
+	height: 284px;
+}
+
+.main-contacts img {
+	width: 300px;
+	height: 158px;
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
