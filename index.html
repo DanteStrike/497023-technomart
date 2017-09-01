@@ -397,31 +397,33 @@
 		</div>
 	</footer>
 	
-	<!--Modals-map--><hr>
+	<!--Modals-map-->
 	<section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
       <button class="btn-close">Закрыть</button>
     </section>
 
-	<!--Modals-feedback--><hr>
+	<!--Modals-feedback-->
 	<section class="modal modal-feedback">
 		<div class="modal-feedback__container">
 			<h2 class="visually-hidden">Обратная связь</h2>
-			<div class="modal-feedback__top-wrap">
-				<div class="modal-feedback__top-left">
-					<label class="modal-feedback__title" for="mdl-name">Ваше имя:</label>
-					<input class="modal-feedback__input" type="text" name="modal-feedback__name" id="mdl-name" placeholder="Представьтесь, пожалуйста">
+			<form class="form-feedback" method="get" action="https://echo.htmlacademy.ru">
+				<div class="modal-feedback__top-wrap">
+					<div class="modal-feedback__top-left">
+						<label class="modal-feedback__title" for="mdl-name">Ваше имя:</label>
+						<input class="modal-feedback__input" type="text" name="modal-feedback__name" id="mdl-name" placeholder="Представьтесь, пожалуйста" required>
+					</div>
+					<div class="modal-feedback__top-right">
+						<label class="modal-feedback__title" for="mdl-mail">Ваш e-mail:</label>
+						<input class="modal-feedback__input" type="email" name="modal-feedback__mail" id="mdl-mail" placeholder="Для отправки ответа" required>
+					</div>
 				</div>
-				<div class="modal-feedback__top-right">
-					<label class="modal-feedback__title" for="mdl-mail">Ваш e-mail:</label>
-					<input class="modal-feedback__input" type="e-mail" name="modal-feedback__mail" id="mdl-mail" placeholder="Для отправки ответа">
-				</div>
-			</div>
-			<label class="modal-feedback__title modal-feedback__title--latter" for="mdl-latter">Текст письма:</label>
-			<textarea class="modal-feedback__latter" id="mdl-latter" placeholder="В свободной форме"></textarea>
-			<button class="red-btn modal-feedback__red-btn">Отправить</button>
-			<button class="btn-close">Закрыть</button>
+				<label class="modal-feedback__title modal-feedback__title--latter" for="mdl-latter">Текст письма:</label>
+				<textarea class="modal-feedback__latter" id="mdl-latter" name="modal-feedback__tarea" placeholder="В свободной форме" required></textarea>
+				<button class="red-btn modal-feedback__red-btn" type="submit">Отправить</button>
+			</form>
 		</div>
+		<button class="btn-close">Закрыть</button>
 	</section>
   </body>
 </html>

@@ -1737,42 +1737,6 @@ img {
 	text-decoration: none;
 }
 
-
-.modal-map {
-	position: relative;
-
-	width: 940px;
-	height: 446px;
-	margin-left: 10px;
-
-	background-color: #ffffff;
-	background-image: url("../img/modal-map-1.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-box-shadow: 0 0 16px 0 rgba(47,42,43, 0.5);
-	        box-shadow: 0 0 16px 0 rgba(47,42,43, 0.5);
-}
-
-.btn-close {
-	position: absolute;
-	top: 9px;
-	right: 9px;
-
-	width: 21px;
-	min-height: 21px;
-	margin: 0;
-	padding: 0;
-
-	font-size: 0;
-
-	background-color: transparent;
-	background-image: url("../img/form-2.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	border: 0;
-	cursor: pointer;
-}
-
 .hover-product {
 	position: absolute;
 	top: 0;
@@ -1877,12 +1841,53 @@ img {
 	border: 3px solid rgba(0,0,0, 0.3);
 }
 
-.modal-feedback {
-	position: relative;
+.modal {
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	z-index: 10;
+}
 
+
+.modal-map {
+	display: none;
+	width: 940px;
+	height: 446px;
+	margin-left: -470px;
+
+	background-color: #ffffff;
+	background-image: url("../img/modal-map-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-box-shadow: 0 0 16px 0 rgba(47,42,43, 0.5);
+	        box-shadow: 0 0 16px 0 rgba(47,42,43, 0.5);
+}
+
+.btn-close {
+	position: absolute;
+	top: 9px;
+	right: 9px;
+
+	width: 21px;
+	min-height: 21px;
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
+	background-color: transparent;
+	background-image: url("../img/form-2.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-feedback {
+	display: none;
 	width: 620px;
 	min-height: 430px;
-	margin-left: 10px;
+	margin-left: -310px;
 
 	background-color: #ffffff;
 	border-top: 7px solid #ee3643;
@@ -2461,11 +2466,12 @@ img {
 
 .sorting-title {
 	width: 121px;
+	min-height: 27px;
 	margin: 0;
 	padding: 0;
-	padding-left: 19px;
-	min-height: 27px;
 	padding-top: 9px;
+	padding-left: 19px;
+
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -2680,11 +2686,10 @@ img {
 }
 
 .modal-add {
-	position: relative;
-
+	display: none;
 	width: 620px;
 	min-height: 275px;
-	margin-left: 10px;
+	margin-left: -310px;
 
 	background-color: #ffffff;
 	border-top: 7px solid #ee3643;
