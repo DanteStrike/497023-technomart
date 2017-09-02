@@ -9,7 +9,7 @@ body {
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #000000;
 	text-transform: none;
 	font-style: normal;
@@ -29,6 +29,7 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+	text-align: center;
 }
 
 .promo-slide img {
@@ -68,7 +69,7 @@ img {
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-style: normal;
 	white-space: nowrap;
 
@@ -114,7 +115,7 @@ img {
 
 	font-size: 14px;
 	line-height: 18px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	text-align: center;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -237,7 +238,7 @@ img {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 17px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #ffffff;
 	font-style: normal;
 
@@ -478,7 +479,7 @@ img {
 
 	font-size: 16px;
 	line-height: 18px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	vertical-align: top;
 	text-align: left;
 	color: #32425c;
@@ -892,7 +893,7 @@ img {
 	height: 6px;
 	margin: 0;
 	padding: 0;
-
+	vertical-align: top;
 	font-size: 0;
 
 	background-color: #ffffff;
@@ -912,7 +913,7 @@ img {
 
 .promo-slide {
 	position: absolute;
-
+	z-index: -1;
 	color: #ffffff;
 }
 
@@ -938,10 +939,11 @@ img {
 
 	font-size: 18px;
 	line-height: 22px;
-	font-family: "PT Sans", "Times New Roman", sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
 .promo-slides {
+
 }
 
 .promo-point-left:checked ~ .promo-slider-controls .controls-1,
@@ -1087,7 +1089,7 @@ img {
 	margin-right: 20px;
 	margin-bottom: 20px;
 
-	font-family: "PT Sans", "Times New Roman", sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	text-align: center;
 	color: #000000;
 
@@ -1796,7 +1798,7 @@ img {
 
 	font-size: 14px;
 	line-height: 18px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #ffffff;
 	text-transform: uppercase;
 
@@ -1847,7 +1849,7 @@ img {
 
 	font-size: 14px;
 	line-height: 17px;
-	font-family: "Cuprum", "Times New Roman", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #000000;
 	text-transform: uppercase;
 
@@ -1969,7 +1971,7 @@ img {
 
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT Sans", "Times New Roman", sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 
 	border: 2px solid #dee3e4;
 }
@@ -2003,7 +2005,7 @@ img {
 
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT Sans", "Times New Roman", sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 
 	border: 2px solid #dee3e4;
 }
