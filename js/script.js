@@ -11,12 +11,7 @@ var modal = document.querySelectorAll(".modal"),
 	btn_add_continue = document.querySelector(".modal-add__btn--continue"),
 	btn_close = document.querySelectorAll(".btn-close"),
 
-	cart = document.querySelector(".user-tools__item--cart"),
-
-	form_feedback = modal_feedback.querySelector(".form-feedback"),
-	form_feedback_name = modal_feedback.querySelector("[name=modal-feedback__name]"), 
-	form_feedback_email = modal_feedback.querySelector("[name=modal-feedback__mail]"),
-	form_feedback_text = modal_feedback.querySelector("[name=modal-feedback__tarea]");
+	cart = document.querySelector(".user-tools__item--cart");
 
 var index, str, dstr, num;
 
@@ -27,6 +22,11 @@ if (modal_map != null)
 	});
 
 if (modal_feedback != null) {
+	var 	form_feedback = modal_feedback.querySelector(".form-feedback"),
+			form_feedback_name = modal_feedback.querySelector("[name=modal-feedback__name]"), 
+			form_feedback_email = modal_feedback.querySelector("[name=modal-feedback__mail]"),
+			form_feedback_text = modal_feedback.querySelector("[name=modal-feedback__tarea]");
+			
 	btn_feedback.addEventListener("click", function(e) {
 		e.preventDefault();
 		modal_feedback.classList.add("modal-show");
