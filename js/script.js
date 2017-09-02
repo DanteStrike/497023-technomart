@@ -11,21 +11,46 @@ var modal = document.querySelectorAll('.modal'),
 	btn_add_continue = document.querySelector('.modal-add__btn--continue'),
 	btn_close = document.querySelectorAll('.btn-close'),
 
-	cart = document.querySelector('.user-tools__item--cart');
+	cart = document.querySelector('.user-tools__item--cart'),
+
+	form_feedback = modal_feedback.querySelector('.form-feedback'),
+	form_feedback_name = modal_feedback.querySelector('[name=modal-feedback__name]'), 
+	form_feedback_email = modal_feedback.querySelector('[name=modal-feedback__mail]'),
+	form_feedback_text = modal_feedback.querySelector('[name=modal-feedback__tarea]');
 
 var index, str, dstr, num;
 
 if (modal_map != null)
 	img_map.addEventListener('click', function(e) {
-			e.preventDefault();
-			modal_map.classList.add('modal-show');
+		e.preventDefault();
+		modal_map.classList.add('modal-show');
 	});
 
-if (modal_feedback != null)
+if (modal_feedback != null) {
 	btn_feedback.addEventListener('click', function(e) {
-			e.preventDefault();
-			modal_feedback.classList.add('modal-show');
+		e.preventDefault();
+		modal_feedback.classList.add('modal-show');
 	});
+
+	form_feedback.addEventListener('submit', function(e) {
+		modal_feedback.classList.remove('modal-error');
+		if (!form_feedback_name.value || !form_feedback_email.value || !form_feedback_text.value) {
+			e.preventDefault();
+			setTimeout(function() {
+				modal_feedback.classList.add('modal-error');
+			}, 25);
+			if (!form_feedback_name.value) {
+				form_feedback_name.focus();
+				} else { if (!form_feedback_email.value) {
+					form_feedback_email.focus();
+					} else { if (!form_feedback_text.value) {
+						form_feedback_text.focus();
+					}
+				}
+			}
+		}
+	});
+}
 
 if (modal_add != null) {
 	for (index = 0; index < btn_add.length; ++index) {
@@ -67,10 +92,9 @@ if (modal_add != null) {
 }
 
 if (modal_add != null)
-	btn_add_continue.addEventListener('click', 
-		function(e) {
-			e.preventDefault();
-			modal_add.classList.remove('modal-show');
+	btn_add_continue.addEventListener('click', function(e) {
+		e.preventDefault();
+		modal_add.classList.remove('modal-show');
 	});
 
 if (modal != null)
