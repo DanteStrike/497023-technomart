@@ -101,8 +101,17 @@ if (modal != null)
 	for (index = 0; index < btn_close.length; ++index) {
 	    btn_close[index].addEventListener('click', function(e) {
 			e.preventDefault();
-			for (index = 0; index < modal.length; ++index) {
-				    this.parentNode.classList.remove('modal-show');
-			}			
+			this.parentNode.classList.remove('modal-show');	
 		});
 	};
+
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+		for (index = 0; index < modal.length; ++index) {
+			if (modal[index].classList.contains("modal-show")) {
+				modal[index].classList.remove("modal-show");
+				modal[index].classList.remove("modal-error");
+			}	
+		};		
+	}
+});
