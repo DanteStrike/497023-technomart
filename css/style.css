@@ -1109,6 +1109,15 @@ img {
 	        box-shadow: 0 10px 20px 0 rgba(41,52,73, 0.5),
 	0 0 5px 0 rgba(41,52,73, 0.5);
 }
+
+.product--focus {
+	border: 1px solid #ffffff;
+	-webkit-box-shadow: 0 10px 20px 0 rgba(41,52,73, 0.5),
+	0 0 5px 0 rgba(41,52,73, 0.5);
+	        box-shadow: 0 10px 20px 0 rgba(41,52,73, 0.5),
+	0 0 5px 0 rgba(41,52,73, 0.5);
+}
+
 .product:hover .hover-product {
 	z-index: 4;
 }
@@ -1806,7 +1815,7 @@ img {
 	border: 0 none;
 	border-bottom: 3px solid #367315;
 	border-radius: 3px;
-	outline: 0;
+
 	cursor: pointer;
 }
 
@@ -1856,7 +1865,7 @@ img {
 	background-color: #ffffff;
 	border: 3px solid #63a63e;
 	border-radius: 3px;
-	outline: 0;
+
 	cursor: pointer;
 }
 
@@ -1870,16 +1879,25 @@ img {
 	border: 3px solid rgba(0,0,0, 0.3);
 }
 
+.hover-product--focus {
+	z-index: 4;
+}
+
 .modal {
+	display: none;
 	position: fixed;
 	top: 15%;
 	left: 50%;
 	z-index: 10;
 }
 
+.modal-show {
+	display: block;
+}
+
 
 .modal-map {
-	display: none;
+	
 	width: 940px;
 	height: 446px;
 	margin-left: -470px;
@@ -1913,7 +1931,7 @@ img {
 }
 
 .modal-feedback {
-	display: none;
+
 	width: 620px;
 	min-height: 430px;
 	margin-left: -310px;
@@ -2739,7 +2757,7 @@ img {
 }
 
 .modal-add {
-	display: none;
+
 	width: 620px;
 	min-height: 275px;
 	margin-left: -310px;
