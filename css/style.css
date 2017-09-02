@@ -29,6 +29,7 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+
 	text-align: center;
 }
 
@@ -893,8 +894,9 @@ img {
 	height: 6px;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
+
 	font-size: 0;
+	vertical-align: top;
 
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
@@ -914,6 +916,7 @@ img {
 .promo-slide {
 	position: absolute;
 	z-index: -1;
+
 	color: #ffffff;
 }
 
@@ -943,7 +946,6 @@ img {
 }
 
 .promo-slides {
-
 }
 
 .promo-point-left:checked ~ .promo-slider-controls .controls-1,
@@ -1111,6 +1113,8 @@ img {
 }
 
 .product--focus {
+	z-index: 1;
+
 	border: 1px solid #ffffff;
 	-webkit-box-shadow: 0 10px 20px 0 rgba(41,52,73, 0.5),
 	0 0 5px 0 rgba(41,52,73, 0.5);
@@ -1815,7 +1819,6 @@ img {
 	border: 0 none;
 	border-bottom: 3px solid #367315;
 	border-radius: 3px;
-
 	cursor: pointer;
 }
 
@@ -1826,7 +1829,7 @@ img {
 
 	width: 15px;
 	min-height: 15px;
-
+	outline: 3px;
 	opacity: 0.3;
 }
 
@@ -1865,7 +1868,6 @@ img {
 	background-color: #ffffff;
 	border: 3px solid #63a63e;
 	border-radius: 3px;
-
 	cursor: pointer;
 }
 
@@ -1884,11 +1886,12 @@ img {
 }
 
 .modal {
-	display: none;
 	position: fixed;
 	top: 15%;
 	left: 50%;
 	z-index: 10;
+
+	display: none;
 }
 
 .modal-show {
@@ -1897,7 +1900,6 @@ img {
 
 
 .modal-map {
-	
 	width: 940px;
 	height: 446px;
 	margin-left: -470px;
@@ -1931,7 +1933,6 @@ img {
 }
 
 .modal-feedback {
-
 	width: 620px;
 	min-height: 430px;
 	margin-left: -310px;
@@ -2757,7 +2758,6 @@ img {
 }
 
 .modal-add {
-
 	width: 620px;
 	min-height: 275px;
 	margin-left: -310px;
