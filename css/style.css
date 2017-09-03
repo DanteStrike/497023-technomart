@@ -1077,7 +1077,6 @@ img {
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
-
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	-ms-flex-wrap: wrap;
@@ -1085,9 +1084,9 @@ img {
 
 .product {
 	position: relative;
-
-	width: 218px;
-	min-height: 316px;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 318px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 
@@ -1098,6 +1097,9 @@ img {
 	background-color: #ffffff;
 	border: 1px solid #eaeaea;
 }
+
+
+
 
 .popular-products .product:nth-child(4n) {
 	margin-right: 0;
@@ -1177,10 +1179,10 @@ img {
 
 .product .product__cost {
 	position: relative;
-
+	box-sizing: border-box;
 	display: block;
-	width: 86px;
-	min-height: 28px;
+	width: 160px;
+	min-height: 38px;
 	margin-left: 42px;
 	padding-top: 10px;
 	padding-left: 36px;
@@ -1188,24 +1190,12 @@ img {
 	text-align: left;
 	color: #ffffff;
 
-	background-color: #ee3643;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-image: url("../img/red-button.svg");
 }
-
-/*!-- Decoration -> */
-
-.product .product__cost::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: -38px;
-
-	border: 19px solid transparent;
-	border-left-color: #ee3643;
-}
-
-/* Decoration -> --!*/
 
 .manufacturers {
 	display: -webkit-box;
@@ -2173,7 +2163,7 @@ img {
 .main-container__title {
 	min-height: 60px;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 	padding: 0;
 	padding-top: 29px;
 	padding-left: 28px;
