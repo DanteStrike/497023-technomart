@@ -1956,6 +1956,10 @@ img {
 	        box-shadow: 0 0 16px 0 rgba(47,42,43, 0.5);
 }
 
+.modal-map iframe {
+	border: 0 none;
+}
+
 .btn-close {
 	position: absolute;
 	top: 9px;
