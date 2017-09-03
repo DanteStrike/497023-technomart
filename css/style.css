@@ -1077,6 +1077,7 @@ img {
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
+
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	-ms-flex-wrap: wrap;
@@ -1084,7 +1085,10 @@ img {
 
 .product {
 	position: relative;
-	box-sizing: border-box;
+
+	-webkit-box-sizing: border-box;
+
+	        box-sizing: border-box;
 	width: 220px;
 	min-height: 318px;
 	margin-right: 20px;
@@ -1178,13 +1182,15 @@ img {
 }
 
 .product .product__discount--false {
-	font-size: 0px;
+	font-size: 0;
 }
 
 .product .product__cost {
 	position: relative;
-	box-sizing: border-box;
+
 	display: block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 160px;
 	min-height: 38px;
 	margin-left: 42px;
@@ -1194,11 +1200,11 @@ img {
 	text-align: left;
 	color: #ffffff;
 
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+	background-image: url("../img/red-button.svg");
 	background-repeat: no-repeat;
 	background-size: auto 100%;
-	background-image: url("../img/red-button.svg");
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
 .manufacturers {
@@ -1542,6 +1548,7 @@ img {
 }
 
 .main-contacts .main-contacts__red-btn {
+	box-sizing: border-box;
 	width: 300px;
 	min-height: 38px;
 	padding-left: 64px;
@@ -1792,7 +1799,7 @@ img {
 
 .hover-product .hover-product__buy {
 	position: relative;
-
+	box-sizing: border-box;
 	display: block;
 	width: 135px;
 	min-height: 38px;
@@ -1801,8 +1808,8 @@ img {
 	margin-bottom: 7px;
 	margin-left: 41px;
 	padding: 0;
-	padding-top: 6px;
-
+	padding-top: 11px;
+	text-align: center;
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
@@ -1892,21 +1899,46 @@ img {
 .modal-show {
 	display: block;
 
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.6s;
+
+	        animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		        transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		        transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
 }
 
 @keyframes bounce {
 	0% {
-		transform: translateY(-2000px);
+		-webkit-transform: translateY(-2000px);
+		        transform: translateY(-2000px);
 	}
 	70% {
-		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+		        transform: translateY(30px);
 	}
 	90% {
-		transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
 	}
 	100% {
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 }
 
@@ -1956,33 +1988,69 @@ img {
 }
 
 .modal-error {
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
 
-	animation: shake 0.82s cubic-bezier(0.36,0.07,0.19,0.97) both;
+	-webkit-animation: shake 0.82s cubic-bezier(0.36,0.07,0.19,0.97) both;
+
+	        animation: shake 0.82s cubic-bezier(0.36,0.07,0.19,0.97) both;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
 	10%,
 	90% {
-		transform: translate3d(-1px, 0, 0);
+		-webkit-transform: translate3d(-1px, 0, 0);
+		        transform: translate3d(-1px, 0, 0);
 	}
 
 	20%,
 	80% {
-		transform: translate3d(2px, 0, 0);
+		-webkit-transform: translate3d(2px, 0, 0);
+		        transform: translate3d(2px, 0, 0);
 	}
 
 	30%,
 	50%,
 	70% {
-		transform: translate3d(-4px, 0, 0);
+		-webkit-transform: translate3d(-4px, 0, 0);
+		        transform: translate3d(-4px, 0, 0);
 	}
 
 	40%,
 	60% {
-		transform: translate3d(4px, 0, 0);
+		-webkit-transform: translate3d(4px, 0, 0);
+		        transform: translate3d(4px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		-webkit-transform: translate3d(-1px, 0, 0);
+		        transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		-webkit-transform: translate3d(2px, 0, 0);
+		        transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translate3d(-4px, 0, 0);
+		        transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		-webkit-transform: translate3d(4px, 0, 0);
+		        transform: translate3d(4px, 0, 0);
 	}
 }
 
@@ -2688,6 +2756,16 @@ img {
 
 .icon-up:active,
 .icon-down:active {
+	fill: #ee3643;
+}
+
+.sorting-list .sorting-list__item--active {
+	color: #ee3643;
+
+	border-bottom: 0;
+}
+
+.sorting-list__item--active svg {
 	fill: #ee3643;
 }
 
