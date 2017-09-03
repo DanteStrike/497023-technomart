@@ -68,26 +68,26 @@ if (modal_add != null) {
 				cart.classList.add("user-tools__item--red");
 		});
 	    btn_add[index].addEventListener("focus", function(e) {
-	    	this.parentNode.parentNode.classList.add("product--focus");
 	    	this.parentNode.classList.add("hover-product--focus");
+	    	this.parentNode.parentNode.classList.add("product--focus");
 		});
 	    btn_add[index].addEventListener("focusin", function(e) {
-	    	this.parentNode.parentNode.classList.add("product--focus");
 	    	this.parentNode.classList.add("hover-product--focus");
+	    	this.parentNode.parentNode.classList.add("product--focus");
 		});
-	    btn_add[index].addEventListener("focusout", function(e) {
+	    btn_add[index].addEventListener("blur", function(e) {
 	    	this.parentNode.classList.remove("hover-product--focus");
 	    	this.parentNode.parentNode.classList.remove("product--focus");
 		});
 		btn_add_z[index].addEventListener("focus", function(e) {
+			this.parentNode.classList.add("hover-product--focus");
 	    	this.parentNode.parentNode.classList.add("product--focus");
-	    	this.parentNode.classList.add("hover-product--focus");
 		});
 		btn_add_z[index].addEventListener("focusin", function(e) {
+			this.parentNode.classList.add("hover-product--focus");
 	    	this.parentNode.parentNode.classList.add("product--focus");
-	    	this.parentNode.classList.add("hover-product--focus");
 		});
-	    btn_add_z[index].addEventListener("focusout", function(e) {
+	    btn_add_z[index].addEventListener("blur", function(e) {
 	    	this.parentNode.classList.remove("hover-product--focus");
 	    	this.parentNode.parentNode.classList.remove("product--focus");
 		});
