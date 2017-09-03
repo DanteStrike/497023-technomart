@@ -1177,6 +1177,10 @@ img {
 	text-decoration: line-through;
 }
 
+.product .product__discount--false {
+	font-size: 0px;
+}
+
 .product .product__cost {
 	position: relative;
 	box-sizing: border-box;
@@ -2243,7 +2247,7 @@ img {
 
 .filter-price,
 .filter-manufacturers {
-	margin-bottom: 18px;
+	margin-bottom: 17px;
 
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -2275,7 +2279,7 @@ img {
 }
 
 .filter-power .filter-power__title {
-	margin-bottom: 11px;
+	margin-bottom: 13px;
 }
 
 .range-controls {
@@ -2334,7 +2338,7 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
@@ -2386,7 +2390,7 @@ img {
 }
 
 .power-list {
-	margin-bottom: 77px;
+	margin-bottom: 76px;
 }
 
 .manufacturers-list .manufacturers-list__item,
